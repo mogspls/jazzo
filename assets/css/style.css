@@ -1,22 +1,265 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
+/*======================
+Typography
+======================*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans Black', sans-serif;
+}
+p {
+    font-family: 'Commissioner', sans-serif;
+}
 
 /*======================
 Classes
 ======================*/
 .container { margin:0 auto; max-width: 1200px; width: 100%; }
-
+.reverse { flex-direction: row-reverse; }
+.flex { display: flex; flex-direction: row; }
 
 /*======================
 Header
 ======================*/
 #main-header {
-    
+    width: 100%;
 }
+    #main-header .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 24px 5px;
+    }
+        #main-header ul li.active a{
+            color: #914133 !important;
+            border-bottom: solid 2px #914133;
+        }
+
+#main-menu {
+    font-family: 'Barlow Condensed', sans-serif;
+    justify-content: flex-end;
+    display: flex;
+}
+    #main-menu ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+    }
+        #main-menu ul li {
+            margin: 0px 10px;
+        }
+            #main-menu ul li a {
+                text-decoration: none;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 32px;
+                padding: 0px 14px;
+                color: #053E5F;
+            }
+#kebab {
+    margin: 0px 25px;
+}
+    #kebab span {
+        display: block;
+        height: 7px;
+        width: 7px;
+        background: #053e5f;
+        border-radius: 100%;
+        margin: 4px 0px;
+    }
+    
+/*======================
+Main
+======================*/
+
+#hero {
+    display: flex;
+    height: 100%;
+}
+    #hero div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        align-self: center;
+        margin: 10px;
+    }
+        #hero div img {
+            width: 100%;
+            height: auto;
+        }
+        #hero div h4 {
+            font-weight: 600;
+            color: #914133;
+            font-family: 'Fira Sans', sans-serif;
+            text-transform: uppercase;
+        }
+        #hero div h1 {
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 900;
+            font-size: 52px;
+            color: #053E5F;
+        }
+        #hero div p {
+            font-family: 'Commissioner', sans-serif;
+            color: #858b8d;
+            font-size: 18px;
+            margin-top: 24px;
+        }
+/*======================
+About
+======================*/
+
+#about {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+    #about div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 1;
+        align-self: center;
+        margin: 10px;
+    }
+        #about #text {
+            align-items: flex-end !important;
+            align-self: flex-end;
+        }
+        #about div img {
+            width: 100%;
+            height: auto;
+        }
+        #about div p {
+            font-family: 'Commissioner', sans-serif;
+            color: #858b8d;
+            font-size: 18px;
+            margin-top: 24px;
+        }
+
+/*======================
+Other
+======================*/
+section#other h1 {
+    margin: 7vh 0px;
+    font-family: 'Fira Sans';
+    font-size: 42px;
+    color: #053E5F;
+    font-weight: 900;
+    text-align: center;
+}
+    section#other .cards {
+        padding: 50px 40px;
+        background: #FBF19A;
+        margin: 10px;
+        border-radius: 50px;
+        flex: 1;
+    }
+        section#other h4 {
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #914133;
+            font-size: 26px;
+            text-transform: uppercase;
+            margin-bottom: 21px;
+        }
+        section#other .cards p {
+            font-family: 'Commissioner', sans-serif;
+            font-size: 18px;
+            line-height: 1.4em;
+            margin: 21px 0px;
+            color: #053E5F;
+        }
+
+/*======================
+Symbolism
+======================*/
+#symbolism #hero{
+    height: 75vh;
+    background: url('../img/hero.png');
+    background-size: cover;
+    background-position: center;
+}
+#symbolism .content {
+    margin: 50px 0px;
+    align-items: center;
+}
+    #symbolism .cards {
+        background-color: rgba(133, 139, 141, 0.25) !important;
+    }
+    #symbolism .content .flex {
+        align-items: center;
+    }
+        #symbolism .cards ul li {
+            font-family: 'Fira Sans', sans-serif;
+            color: #858b8d;
+            margin-left: 1em;
+        }
+        #symbolism .content h1 {
+            font-family: 'Fira Sans', sans-serif;
+            color: #053E5F;
+            font-size: 48px;
+            width: min-intrinsic;
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: min-content;
+            display: table-caption;
+            display: -ms-grid;
+            -ms-grid-columns: min-content;
+            padding: 5px;
+            font-weight: 800;
+            line-height: 1em;
+        }
+        #symbolism .content p {
+            padding: 5px;
+            color: #858b8d;
+        }
 
 /*======================
 Footer
 ======================*/
 footer {
-    padding: 
+    padding: 24px 15px;
+    background-color: #053E5F;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/*======================
+Media
+======================*/
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column !important;
+    }
+    .md-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .flex {
+        flex-direction: row;
+    }
+    #symbolism .content h1,
+    #symbolism .content div {
+        width: 100% !important;
+        margin: 5px 0px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    section#other .flex {
+        flex-direction: column;
+    }
 }
