@@ -352,6 +352,33 @@ Artists
     #artists #jaime-marianne .artist p {
         margin: 14px 0px;
     }
+
+    #artists #quote {
+        flex: 1;
+        display: flex;
+    }
+    #panday-sining {
+        margin: 50px 0px;
+    }
+    #panday-sining h1 {
+        color: #053E5F;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 900;
+        font-size: 64px;
+    }
+    #panday-sining #quote {
+        min-height: 100vh;
+    }
+    #panday-sining #meetps {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        flex-direction: column;
+    }
+    #panday-sining #meetps p {
+        color: #aaa;
+        margin: 50px 0px;
+    }
 /*======================
 Footer
 ======================*/

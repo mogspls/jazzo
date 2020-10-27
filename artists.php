@@ -139,7 +139,22 @@
         </div>
     </section>
 
-    
+    <section id="panday-sining">
+        <div class="container">
+            <div class="flex">
+                <div id="quote">
+                    <img src="assets/img/quot.svg" alt="" height="20px">
+                    <h2>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptate</h2>
+                    <h3>BY NAME SURNAME</h3>
+                </div>
+                <div id="meetps"style="flex: 1;">
+                    <h1>Meet the <br> artists from Panday Sining</h1>
+                    <p>Panday Sining is Anakbayan's cultural wing, making it a multidisciplinary national demo-cratic mass organization that is also an artist collective. It aims to create art as a medium of expression for national democracy. This organization was founded by Bonifacio P. Ilagan, or Ka Boni, who was a member of UP Mobile Theater under Wilfredo Ma. Guerrero in 1968. He established Panday Sining as a theatre group during his time in Mobile Theater. The late dictator Ferdinand Marcos cited the organization as a major security threat, for it is one of the three pioneer theater groups of the activist movement that allowed him to impose Martial Law.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="jaime-marianne">
         <div class="container">
             <div class="flex">
@@ -169,7 +184,6 @@
                     <p>
                         An education ocerfor Panday Sining, while also being a member of other mass organizations. Being an educational officer, he ensures that members are learning, and are aligned with the national democratic mass movement, through discussions on socialrealities. Aside from teaching theory and ideas, he also teaches the members how to apply the learnings to one’s self.
                     </p>
-                    
                     <div class="assets">
                         <div>
                             <h4>Listen to the interview</h4>
