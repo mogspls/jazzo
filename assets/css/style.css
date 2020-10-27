@@ -7,7 +7,7 @@
 Typography
 ======================*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans Black', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 p {
     font-family: 'Commissioner', sans-serif;
@@ -218,6 +218,141 @@ Symbolism
         }
 
 /*======================
+Artists
+======================*/
+#artists {
+    min-height: 100vh;
+}
+    #artists #quote {
+        background: #fbf19a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 0px;
+        flex-direction: column;
+    }
+        #artists #quote h2 {
+            font-family: 'Fira Sans', sans-serif;
+            color: #053e5f;
+            width: 100%;
+            font-size: 28px;
+            max-width: 720px;
+            padding: 10px;
+            font-weight: 900;
+            line-height: 1.3em;
+            font-style: italic;
+            letter-spacing: 0.05px;
+        }
+        #artists #quote h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 24px;
+            color: #914133;
+        }
+    #artists #meet-the-artists {
+        margin: 5em 0px;
+    }
+        #artists #meet-the-artists div{
+            flex: 1;
+            padding: 10px 5px;
+        }
+            #artists #meet-the-artists div h1 {
+                font-size: 52px;
+                color: #053e5f;
+                font-weight: 900;
+            }
+            #artists #meet-the-artists div p {
+                color: #aaa;
+            }
+    #artists #max {
+        background-color: rgba(5,62,95,0.5);
+        padding: 25px 10px;
+        display: flex;
+    }
+        #artists #max #wrapper div {
+            display: flex;
+            flex-direction: column;
+        }
+        #artists #max #max-profile {
+            background: url(../img/hero.png);
+            display: flex;
+            min-height: 700px;
+            background-size: cover;
+            background-position: center;
+            justify-content: flex-end;
+            flex: 1;
+        }
+            #artists #max #max-profile h2{
+                color: #914133;
+                font-weight: 900;
+                font-style: italic;
+                font-weight: 900;
+                padding: 12px;
+            }
+            #artists #max #max-desc {
+                margin-right: 24px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            .assets {
+                display: flex;
+                flex: 1;
+                /* height: 100%; */
+                justify-content: flex-end;
+                flex-direction: column;
+            }
+            .assets div a {
+                background: #053e5f;
+                padding: 10px;
+                font-family: 'Commissioner', sans-serif;
+                color: #fbf19a;
+                margin: 5px 0px;
+                text-decoration: none;;
+                display: block;
+            }
+            .assets div {
+                margin: 10px 0px;
+            }
+            #artists #max #max-desc h1{
+                color: #914133;
+                font-size: 4em;
+                font-weight: 900;
+                padding: 12px 0px;
+            }
+            #artists .assets h4 {
+                color: #fbf19a;
+                font-weight: 600;
+                font-size: 24px;
+                font-family: 'Barlow Condensed', sans-serif;
+                text-transform: uppercase;
+            }
+            #artists #max #max-desc p {
+                color: #053e5f;
+                padding: 12px 0px;
+            }
+    #artists #jaime-marianne {
+        margin: 24px 0px;  
+    }
+    #artists #jaime-marianne .artist{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 10px;
+        background-color: rgba(5,62,95,0.5);
+        padding: 24px;
+        min-height: 900px;
+    }
+    #artists #jaime-marianne .artist h1{
+        color: #914133;
+        font-size: 3.4em;
+        font-weight: 900;
+        padding: 12px 0px;
+    }
+    #artists #jaime-marianne .artist p {
+        margin: 14px 0px;
+    }
+/*======================
 Footer
 ======================*/
 footer {
@@ -235,7 +370,7 @@ Media
 ======================*/
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 890px) {
     .flex {
         flex-direction: column !important;
     }
